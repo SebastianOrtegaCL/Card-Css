@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        width: 350px;
+        height: 500px;
+        background: papayawhip;
+        border-radius: 18px;
+        overflow: hidden;
+      }
+      .card img {
+        width: 100%;
+      }
+      .card p {
+        text-align: center;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+      .circle img {
+        border-radius: 50%;
+        transform: translateY(180%);
+      }
+      .circletwo {
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        transform: translateY(160%);
+        left: -5px;
+      }
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+      }
+      .item {
+        padding: 20px;
+        border: 1px dotted black;
+        border-radius: 50px;
+        margin: 2px;
+      }
+
+      .info-media {
+        font-size: 1.25rem;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .numbers {
+        text-align: center;
+        margin-top: 0.3125rem;
+      }
+      .button-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+      }
+      .button-design {
+        background: linear-gradient(
+          90deg,
+          rgba(2, 0, 36, 1) 0%,
+          rgba(7, 139, 47, 1) 1%,
+          rgba(34, 139, 7, 1) 10%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        border-radius: 50px;
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="circle">
+          <div class="circletwo"></div>
+          <img
+            src="https://images.pexels.com/photos/8832766/pexels-photo-8832766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="emoji 3D"
+          />
+        </div>
+        <img
+          src="https://images.pexels.com/photos/34883/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Naturaleza planta cactus primer plano"
+        />
+        <div class="info">
+          <div class="item">
+            <div class="info-media">Followers</div>
+            <div class="numbers">2580</div>
+          </div>
+          <div class="item">
+            <div class="info-media">Following</div>
+            <div class="numbers">239</div>
+          </div>
+        </div>
+        <div class="button-flex">
+          <button class="button-design">Follow me</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
